@@ -1,4 +1,4 @@
-@charset "utf-8";
+restaurant-name@charset "utf-8";
 /* CSS Document */
 
 body,td,th,p{
@@ -211,10 +211,10 @@ nav h1 a {
   position: absolute;
   width: 100%;
 }
-#restaurant-name {
+#restaurant-name ,h3 {
   color: #f18200;
   font-family: Arial,sans-serif;
-  font-size: 20pt;
+  font-size: 15pt;
   font-weight: 200;
   letter-spacing: 0;
   margin: 15px 0 30px;
@@ -277,4 +277,36 @@ nav h1 a {
 }
 #restaurant-hours td {
   color: #666;
+}
+
+nav.breadcrumb {
+  padding: 0.8em 1em;
+  border: 1px solid hsl(0, 0%, 90%);
+  border-radius: 4px;
+  background: hsl(300, 14%, 97%);
+}
+
+nav.breadcrumb ol {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+nav.breadcrumb li {
+  display: inline;
+}
+
+nav.breadcrumb li + li::before {
+  display: inline-block;
+  margin: 0 .25em;
+  transform: rotate(15deg);
+  border-right: .1em solid currentColor;
+  height: .8em;
+  content: '';
+}
+
+nav.breadcrumb [aria-current="page"] {
+  color: #000;
+  font-weight: 700;
+  text-decoration: none;
 }

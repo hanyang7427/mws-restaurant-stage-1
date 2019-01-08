@@ -1,4 +1,4 @@
-var staticCacheName = 'restaurant-static-v3';
+var staticCacheName = 'restaurant-static-v4';
 
 // 当有发现有新的service worker,在安装之前缓存静态文件
 self.addEventListener('install', function (event) {
